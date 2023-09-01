@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+       height: 100%;
+     }
+
+        body{
+            font-family:  Verdana, Arial, Tahoma, Serif;
+           height: 100%;
+        }
+
+
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+
+.slider-wrapper {
+  width: 900px;
+  height: 100%;
+  background-color: red;
+  overflow: hidden;
+}
+
+.slider-wrapper2 {
+  width: 900px;
+  height: 100%;
+  background-color: red;
+  overflow: hidden;
+}
+
+.inner-wrapper {
+  width: 500%;
+  height: 100%;
+  position: relative;
+  left: -100%;
+
+}
+
+.slide {
+  width: calc(100% / 5);
+  height: 100%;
+  float: left;
+  font-size: 30px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.slidec {
+  width: calc(100% / 5);
+  height: 100%;
+  float: left;
+  font-size: 30px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#slide1{
+    background-image: url("./img/first-slidegetstartedbg.png");
+}
+
+#slide2{
+    background-image: url("./img/second slide getstartedbg.png");
+}
+
+#slide3{
+    background-image: url("./img/interior_one.jpg  ");
+}
+
+
+
+
+
+.inner-wrapper2 {
+  width: 500%;
+  height: 100%;
+  position: relative;
+  left: -100%;
+
+}
+
+
+#slidec1{
+ 
+    background-image: url("./img/next bgimg.png");
+}
+
+.slidec1-inner{
+  display: flex; width: 100%; height: 300px;
+  font-size: 18px;
+  justify-content: center; margin-top: 40%;
+   
+}
+
+.slidec1-span{
+  margin-top: 35px;
+}
+
+.checkdiv{
+  margin-top: 30px; width: 30px; height: 30px;
+  border: solid 1px #fff; border-radius: 3px;
+}
+
+
+.checkedImg{
+  width: 30px; align-items: center;
+  display: none;
+}
+
+
+
+#checkedImg1{
+  width: 30px; align-items: center;
+  display: block;
+}
+
+.slidec1-div{
+  height: 80px; width: 100%;
+    position: absolute; bottom: 0; 
+    display: flex;
+
+
+}
+
+.slidec4-div{
+  height: 300px; width: 100%;
+    position: absolute; bottom: 0; 
+    display: flex;
+
+
+}
+
+.space{
+  width: 150px; display: flex;
+  justify-content: center;
+}
+
+.slidecbtns{
+   width: 120px; height: 35px; font-size: 18px;
+  border-radius: 20px; color: rgb(121, 12, 12);
+  margin-right: 20px; border: none;
+  padding-bottom: 2px; background: #fff;
+
+
+}
+
+
+#slidec2{
+  display: block;
+
+    background-image: url("./img/next2 Untitled-2.png ");
+}
+
+.levelDiv{
+            display: flex; justify-content: center;
+            margin-top: 30px;
+
+        }
+
+        .levels{
+            width: 20px; height: 20px; text-align: center;
+            border-radius: 10px; background-color: red;
+            color: #fff; font-size: 13px;
+        }
+
+         .levels-line{
+            width: 30%; height: 5px; background-color: rgb(192, 191, 191);
+            color: #fff; margin-top: 7px;
+        }
+
+        .inputsDiv{
+                width: 100%; text-align: center;
+        }
+
+        input{
+            background: none; width: 300px;
+            height: 50px; font-size: 25px; border:none;
+             border-bottom:solid 1px #a34747 ;
+             padding-bottom: 10px; margin-top: 50px;
+        }
+
+         .input{
+          width: 300px; height: 50px; font-size: 25px;
+             border-bottom:solid 1px #a34747 ;
+             padding-bottom: 10px; color:#848484;
+              margin-top: 50px; text-align: start;
+        }
+
+        .api-signup{
+           margin-top: 30px; margin-right: 20px;
+           width: 30px;
+        }
+
+        #fb-img{
+           margin-right: 20px;
+        
+        }
+         #g-img{
+           margin-left: 20px;
+        
+        }
+
+        .slidecbtns2{
+            width: 70px; height: 40px; font-size: 18px;
+            border-radius: 10px; color: rgb(56, 53, 53);
+            border: none;
+            padding-bottom: 2px; background: #fff;
+
+
+          }
+
+
+        .space1{
+            width: 200px; text-align: start;
+            padding-left: 20px;
+          }
+
+           .space2{
+            width: 200px; text-align: end;
+          }
+
+          #submit{
+            width: 170px; height: 40px; font-size: 18px;
+            border-radius: 40px; color: #fff; 
+            border: none;
+            padding-bottom: 2px; background: rgb(201, 75, 75);
+
+
+          }
+
+       
+
+
+
+  #slidec3{
+    display: block;
+
+      background-image: url("./img/next2 Untitled-2.png");
+  }
+
+  .otp{
+    width: 300px;height: 50px; font-size: 25px;
+    border-bottom:solid 1px #a34747 ;
+     padding-bottom: 10px; color:#848484;
+  
+     margin-top:60%; text-align: center;
+  }
+
+
+  #slidec4{
+    display: block; background-color: #ededed;
+    
+  }
+
+  .pass{
+    margin-top: 50px;  text-align: center;
+  }
+
+
+
+
+
+.prev {
+  display: none;
+}
+
+.next {
+ display: none;
+}
+
+#logindiv{
+ text-align: end;
+}
+
+#login{
+  width: 120px; height: 35px; font-size: 18px;
+  border-radius: 20px; color: rgb(255, 255, 255);
+  margin-top: 70px; margin-right: 20px;
+  padding-bottom: 2px; background: none;
+  border:solid 0.1px rgb(255, 255, 255);
+
+}
+
+section{
+    width: 100%; height: 100%;
+  position: absolute;
+  z-index: 2;
+}
+
+.fades{
+  margin-top: 50%;
+  color: #c8c4c4; font-size: 23px;
+   text-align: center;
+}
+
+.fades2{
+  margin-top: 50%; width: 100%;
+  color: #c8c4c4; font-size: 23px;
+   text-align: center;  display: none;
+  position:absolute; z-index: 3;
+}
+
+
+.get-started-div{
+  height: 100px; width: 100%;
+    position: absolute; bottom: 0; left: 0;
+  text-align: center;
+
+}
+
+#getstarted{
+  width: 160px; height: 45px; font-size: 18px;
+  border-radius: 15px; color: rgb(131, 14, 14);
+  margin-right: 20px; background: #fff;
+  padding-bottom: 2px; border:none;
+ 
+
+}
+
+
+
+
+
+
+
+
+ </style>
+</head>
+<body>
+  <section id="section0">
+  <div id="logindiv">
+    <button id="login"> Login</button>
+  </div>
+  
+
+    <div  id="fade-dives"  class="fades">
+      <span>Let Your Home </span> <br>
+        <span >Manage Itself With</span><br>
+        <span >Ghost Switch</span>
+
+</div>
+
+    
+    <div class="get-started-div">
+      <button id="getstarted"> Get Started</button>
+    </div>
+
+  </section>
+
+  <div id="fade-dives" class="fades2">
+    <div style="height:35px; margin-top: 70px;"></div>
+
+    <span>Link Your Ghost Air</span> <br>
+      <span >Account To Your</span><br>
+      <span >Ghost Switch Device</span>
+
+</div>
+ 
+  <div id="containa-1" class="container">
+
+    <div class="slider-wrapper">
+      <div class="inner-wrapper">
+        
+        <div class="slide"id="slide3"> </div>
+        <div class="slide" id="slide1"></div>
+        <div class="slide"  id="slide2"></div>
+            
+     
+      </div>
+    </div>
+
+    <div class="button prev"></div>
+    <div class="button next"></div>
+  </div>
+
+  <div  id="containa-2" class="container">
+
+    <div class="slider-wrapper2">
+      <div class="inner-wrapper2">
+        <div class="slidec"id="slidec4">
+          
+        </div>
+       
+        <div class="slidec" id="slidec1">
+          <div >
+            <div style="display: none;">
+              <div   id="indicator"></div>
+                 <input class="checkbox1" type="checkbox" checked>
+              <input  class="checkbox2" type="checkbox">
+              <input  class="checkbox3" type="checkbox">
+             </div>
+             <span class="checkboxErrorMsg"></span>
+            <div class="slidec1-inner">
+              <div style="margin-right: 20px;">
+                <div class="slidec1-span">I Am A Landlord </div>
+                <div  class="slidec1-span">I Am Looking for a Home  </div>
+                <div  class="slidec1-span">Others </div>
+              </div>
+              <div style="margin-left: 20px;">
+            
+                <div class="checkdiv" id="checkdiv1" ><img class="checkedImg" id="checkedImg1" src="./img/icons8-done-50.png" alt=""></div>
+                <div class="checkdiv" id="checkdiv2" ><img class="checkedImg"  id="checkedImg2" src="./img/icons8-done-50.png" alt=""></div>
+                <div class="checkdiv" id="checkdiv3"><img class="checkedImg"  id="checkedImg3" src="./img/icons8-done-50.png" alt=""></div>
+               
+              </div>
+                  
+            </div>
+            <div class="slidec1-div">
+              <div style="width: 50px;"></div>
+              <div class="space"></div>
+             
+                <div  class="space"> <button class="slidecbtns" id="next-SideC1">Next</button></div>
+               
+            </div>
+           
+          </div>
+        
+
+         
+         
+        </div>
+        <div class="slidec"  id="slidec2">
+          <div>
+            <div class="levelDiv">
+              <div class="levels">1</div>
+              <div class="levels-line"></div>
+              <div class="levels">2</div>
+              <div class="levels-line"></div>
+              <div class="levels">3</div>
+             </div>
+             <div class="inputsDiv">
+              <input type="name" placeholder="First Name"><br>
+              <input type="name" placeholder="Last Name"><br>
+              <div style="display: flex; justify-content:center ;">
+                <div class="input"><span>Age</span></div>
+                <input style="display: none;" type="date" placeholder="Age"></div>
+              <input type="name" placeholder="Email or Phone Number">
+
+        <div style="font-size: 20px; margin-top: 100px;">
+          <span > Sign up with</span>
+         <br>
+         <img class="api-signup" id="fb-img" src="./img/facebook_3670032.png" alt="">
+         <img class="api-signup" id="g-img" src="./img/google.png" alt="">
+
+        </div>
+
+          <div class="slidec1-div"> 
+                    <div  class="space1"> <button class="slidecbtns2" id="back-SideC2">back</button></div>
+                   <div  class="space2"> <button class="slidecbtns2" id="next-SideC2">Next</button></div>
+               
+               
+         </div>
+             
+           
+             </div>
+          </div>
+         
+
+        </div>
+        <div class="slidec"id="slidec3">
+          <div>
+            <div class="levelDiv">
+              <div class="levels">1</div>
+              <div style="background-color: red;" class="levels-line"></div>
+              <div class="levels">2</div>
+              <div  class="levels-line"></div>
+              <div class="levels">3</div>
+             </div>
+             <div class="inputsDiv">
+              <input class="otp" type="number" placeholder="OTP"><br>
+           
+
+        <div style="font-size: 17px; margin-top:30px; color: black; font-weight: 800;">
+          <span > Resend OTP</span>
+       
+        </div>
+
+        <div class="slidec1-div"> 
+          <div  class="space1"></div>
+         <div  class="space2"> <button class="slidecbtns" id="next-SideC3">Next</button></div>
+     
+     
+</div>
+
+
+             
+           
+             </div>
+          </div>
+        
+          
+        </div>
+
+        <div class="slidec"  id="slidec4">
+          <div>
+            <div class="levelDiv">
+              <div class="levels">1</div>
+              <div  style="background-color: red;" class="levels-line"></div>
+              <div class="levels">2</div>
+              <div  style="background-color: red;" class="levels-line"></div>
+              <div class="levels">3</div>
+             </div>
+             <div class="inputsDiv">
+             <div style="margin-top: 40%;">
+              <input class="pass" id="pass_input" type="name" placeholder="Create Password"><br>
+              <input class="pass" id="cpass_input" type="name" type="name" placeholder="Confirm Password"><br>
+              <button  class="pass" id="submit">submit</button>
+      
+             </div>
+             </div>
+          </div>
+
+        <div class="slidec4-div"> 
+          <div  class="space1"> <img style="width: 200px;" src="./img/padlockred.png" alt=""></div>
+             <div  class="space2"> </div>
+  
+           </div>
+
+         
+
+      </div>
+
+        
+     
+        
+            
+     
+      </div>
+    </div>
+
+    <div class="prev0"></div>
+    <div class="next0"></div>
+  </div>
+
+  <script src="/jq.js"></script> 
+  <script>
+
+
+//----------------------------------------------
+
+
+
+
+//bg auto slider
+    const next = document.querySelector(".next");
+    const prev = document.querySelector(".prev");
+
+       setTimeout(function(){
+          next.click();
+        },6000);
+        
+
+
+    setInterval(function() {
+      setTimeout(function(){
+          prev.click();
+        },3000);
+
+        setTimeout(function(){
+          next.click();
+        },6000);
+
+            
+     }, 9000);
+
+//----------------------------------------------
+
+  
+
+    $(function() {
+      
+      var indicator = $('#indicator');
+      
+var inWrap = $('.inner-wrapper');
+var fade1 = $('.fades');
+var fade2 = $('.fades2');
+ //text auto slider
+setInterval(function(){
+  if(indicator.html()=="0"){
+         //do nothing
+
+}else{
+  setTimeout(function(){
+    if(fade1.css("visibility")==="visible"){
+      fade1.fadeOut("slow");
+      fade2.fadeIn();
+
+    }
+       
+        
+   },3000);
+        setTimeout(function(){
+             fade2.fadeOut("slow");
+             fade1.fadeIn();
+
+          
+        
+                 
+    },6000);
+
+}
+ 
+      
+          
+ },6300);
+
+ //----------------------------------------------
+
+ var inWrap = $('.inner-wrapper');
+
+$('.prev').on('click', function() {
+
+  inWrap.animate({left: '0%'}, 600, function(){
+
+    inWrap.css('left', '-100%');
+
+    $('.slide').first().before($('.slide').last());
+
+  });
+
+
+});
+
+
+
+$('.next').on('click', function() {
+
+  inWrap.animate({left: '-200%'}, 600, function(){
+
+    inWrap.css('left', '-100%');
+
+    $('.slide').last().after($('.slide').first());
+
+  });
+
+
+});
+
+
+})
+
+//----------------------------------------------
+
+
+
+var containa1 = $('#containa-1');
+var containa2 = $('#containa-2');
+var section0 = $('#section0');
+var indicator = $('#indicator');
+var fadeDives= $('#fsde-dives');
+
+$('#getstarted').on('click', function() {
+  indicator.html("0");
+
+  section0.fadeOut("slow");
+  containa1.fadeOut();
+  fadeDives.fadeOut();
+  containa2.fadeIn();
+
+  });
+
+
+
+  var checkbox1= $('.checkbox1');
+  var checkbox2= $('.checkbox2');
+  var checkbox3= $('.checkbox3');
+
+var checkdiv1 = $('#checkdiv1');
+var checkdiv2 = $('#checkdiv2');
+var checkdiv3 = $('#checkdiv3');
+
+var checkedImg1 = $('#checkedImg1');
+var checkedImg2 = $('#checkedImg2');
+var checkedImg3 = $('#checkedImg3');
+
+var nextSideC1 = $('#next-SideC1');
+var checkboxErrorMsg = $('.checkboxErrorMsg');
+
+var inWrap2 = $('.inner-wrapper2');
+
+nextSideC1.on('click', function(){
+  if(checkbox1.prop('checked')== false && checkbox2.prop('checked')== false && checkbox3.prop('checked')== false){
+      checkboxErrorMsg.html("please check a box");
+  
+  }else{
+     inWrap2.animate({left: '-200%'}, 600, function(){
+
+    inWrap2.css('left', '-100%');
+
+    $('.slidec').last().after($('.slidec').first());
+
+  });
+ 
+ 
+  }
+ 
+})
+
+
+checkdiv1.on('click', function(){
+  if(checkbox1.prop('checked')== false){
+  checkbox1.prop('checked', true);
+  checkbox2.prop('checked', false);
+  checkbox3.prop('checked', false);
+  checkedImg1.show();
+  checkedImg2.hide();
+  checkedImg3.hide();
+  
+
+  }else{
+    checkbox1.prop('checked', false);
+    checkedImg1.hide();
+   
+
+  }
+ 
+})
+
+checkdiv2.on('click', function(){
+  if(checkbox2.prop('checked')== false){
+  checkbox2.prop('checked', true);
+  checkbox1.prop('checked', false);
+  checkbox3.prop('checked', false);
+  checkedImg2.show();
+  checkedImg1.hide();
+  checkedImg3.hide();
+
+  }else{
+    checkbox2.prop('checked', false);
+    checkedImg2.hide();
+
+  }
+ 
+})
+
+checkdiv3.on('click', function(){
+  if(checkbox3.prop('checked')== false){
+  checkbox3.prop('checked', true);
+  checkbox1.prop('checked', false);
+  checkbox2.prop('checked', false);
+  checkedImg3.show();
+  checkedImg1.hide();
+  checkedImg2.hide();
+
+  }else{
+    checkbox3.prop('checked', false);
+    checkedImg3.hide();
+
+
+  }
+ 
+})
+
+
+var nextSlidec2= $('#next-SideC2');
+var backSlidec2= $('#back-SideC2');
+var containa2 = $('#containa-2');
+
+nextSlidec2.on('click', function(){
+  inWrap2.animate({left: '-200%'}, 600, function(){
+  inWrap2.css('left', '-100%');
+$('.slidec').last().after($('.slidec').first());
+
+  })
+
+  
+  /*
+  if(checkbox1.prop('checked')== false && checkbox2.prop('checked')== false && checkbox3.prop('checked')== false){
+      checkboxErrorMsg.html("please check a box");
+  
+  }else{
+     inWrap2.animate({left: '-200%'}, 600, function(){
+
+    inWrap2.css('left', '-100%');
+
+    $('.slidec').last().after($('.slidec').first());
+    
+
+  });
+
+
+
+
+  }
+    */
+
+  
+
+ 
+})
+
+var nextSlidec3 = $('#next-SideC3')
+
+nextSlidec3.on('click', function(){
+  inWrap2.animate({left: '-200%'}, 600, function(){
+  inWrap2.css('left', '-100%');
+$('.slidec').last().after($('.slidec').first());
+
+  })
+
+
+ 
+})
+
+
+
+
+
+
+</script>
+
+    
+</body>
+</html>

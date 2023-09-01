@@ -1,0 +1,20 @@
+  <div  id="containa-2" class="contain2">
+
+    <div class="slider-wrapper2">
+      <div class="inner-wrapper2">
+        <div class="slided"id="slidec3">
+          <span>I Am A Landlord </span> <input type="checkbox">
+        </div>
+        <div class="slided" id="slidec1"></div>
+        <div class="slided"  id="slidec2"></div>
+        
+            
+     
+      </div>
+    </div>
+
+   
+
+    <div class="prev0"></div>
+    <div class="next0"></div>
+  </div>
